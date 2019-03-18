@@ -1,29 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>com.jms</groupId>
-  <artifactId>jms</artifactId>
-  <packaging>pom</packaging>
-  <version>1.0</version>
-  
-  <name>jms</name>
-  <url>http://maven.apache.org</url>
-  
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-  
-  <modules>
-    <module>activemq</module>
-    <module>ibm-mq</module>
-    <module>kafka</module>
-    <module>weblogic-queue</module>
-    <module>rabbit-mq</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.jms</groupId>
+	<artifactId>jms</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0</version>
+
+	<name>jms</name>
+	<url>http://maven.apache.org</url>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<modules>
+		<module>activemq</module>
+		<module>ibm-mq</module>
+		<module>kafka</module>
+		<module>weblogic-queue</module>
+		<module>rabbit-mq</module>
+	</modules>
+
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<meminitial>128m</meminitial>
+					<maxmem>512m</maxmem>
+					<showDeprecation>true</showDeprecation>
+					<showWarnings>true</showWarnings>
+					<encoding>UTF-8</encoding>
+					<verbose>true</verbose>
+					<compilerArgument>-Xlint:all</compilerArgument>
+					<compilerArgument>-parameters</compilerArgument>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
