@@ -22,5 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/Softwares/wls12.2.1.3.0/wls12213/wlserver/server/lib/weblogic.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
