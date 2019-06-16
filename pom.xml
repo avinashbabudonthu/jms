@@ -49,7 +49,8 @@
 		<module>weblogic-queue</module>
 		<module>rabbit-mq</module>
 		<module>kafka-core-java</module>
-	</modules>
+    	<module>kafka-spring-boot-2</module>
+  	</modules>
 
 	<build>
 		<finalName>${project.artifactId}</finalName>

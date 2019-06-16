@@ -1,0 +1,55 @@
+description = 'activemq'
+
+buildscript{
+    ext{
+        springBootVersion = "2.1.3.RELEASE"
+    }
+
+    repositories{
+        mavenLocal()
+        mavenCentral()
+        jcenter()
+    }
+
+    dependencies{
+        classpath(
+                "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}",
+                "org.springframework.boot:spring-boot-starter-parent:${springBootVersion}",
+        )
+    }
+}
+
+apply plugin: "java"
+apply plugin: "eclipse"
+apply plugin: "org.springframework.boot"
+apply plugin: "io.spring.dependency-management"
+apply plugin: "maven"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories{
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+jar{
+    baseName = "kafka-spring-boot-2"
+}
+
+configurations.all{
+    exclude group:"ch.qos.logback", module: "logback-classic"
+    exclude group:"ch.qos.logback", module: "logback-core"
+}
+
+dependencies{
+    compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-devtools"
+    compile "org.springframework.boot:spring-boot-actuator"
+
+    compile "org.hibernate:hibernate-validator"
+    compile "joda-time:joda-time:2.9.2"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+}

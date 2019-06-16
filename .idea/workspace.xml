@@ -1,30 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="421e9e75-6f26-4c4d-bc52-a6c646f9fe33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-core-java/files/mvn.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-core-java/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-core-java/src/test/java/com/consumer/Consumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-core-java/src/test/java/com/producer/Producer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/main/java/com/jms/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka/src/test/java/com/jms/AppTest.java" beforeDir="false" />
+    <list default="true" id="b4a9bd9c-c76a-42b1-9f40-a8e42b25896c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jms/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jms/AppTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/rabbit-mq/target/" />
-    <ignored path="$PROJECT_DIR$/kafka/target/" />
-    <ignored path="$PROJECT_DIR$/ibm-mq/target/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <ignored path="$PROJECT_DIR$/weblogic-queue/target/" />
-    <ignored path="$PROJECT_DIR$/activemq/target/" />
-    <ignored path="$PROJECT_DIR$/kafka/core-java/target/" />
-    <ignored path="$PROJECT_DIR$/kafka-core-java/target/" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/activemq/.gradle/" />
+    <ignored path="$PROJECT_DIR$/activemq/build/" />
+    <ignored path="$PROJECT_DIR$/activemq/out/" />
+    <ignored path="$PROJECT_DIR$/ibm-mq/.gradle/" />
+    <ignored path="$PROJECT_DIR$/ibm-mq/build/" />
+    <ignored path="$PROJECT_DIR$/ibm-mq/out/" />
+    <ignored path="$PROJECT_DIR$/kafka-core-java/.gradle/" />
+    <ignored path="$PROJECT_DIR$/kafka-core-java/build/" />
+    <ignored path="$PROJECT_DIR$/kafka-core-java/out/" />
+    <ignored path="$PROJECT_DIR$/kafka-spring-boot-2/.gradle/" />
+    <ignored path="$PROJECT_DIR$/kafka-spring-boot-2/build/" />
+    <ignored path="$PROJECT_DIR$/kafka-spring-boot-2/out/" />
+    <ignored path="$PROJECT_DIR$/rabbit-mq/.gradle/" />
+    <ignored path="$PROJECT_DIR$/rabbit-mq/build/" />
+    <ignored path="$PROJECT_DIR$/rabbit-mq/out/" />
+    <ignored path="$PROJECT_DIR$/weblogic-queue/.gradle/" />
+    <ignored path="$PROJECT_DIR$/weblogic-queue/build/" />
+    <ignored path="$PROJECT_DIR$/weblogic-queue/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +44,67 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-240" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-core-java/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="40">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,37 +119,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kafka/core-java/src/test/java/com/producer/Producer.java" />
-        <option value="$PROJECT_DIR$/kafka/core-java/src/test/java/com/consumer/Consumer.java" />
-        <option value="$PROJECT_DIR$/kafka/core-java/src/test/java/com/consumer/Test.java" />
-        <option value="$PROJECT_DIR$/kafka/core-java/src/test/com/consumer/Consumer.java" />
-        <option value="$PROJECT_DIR$/kafka/core-java/src/main/java/com/consumer/Consumer.java" />
-        <option value="$PROJECT_DIR$/kafka/core-java/src/test/java/com/consumer/ConsumerPractice.java" />
-        <option value="$PROJECT_DIR$/kafka/core-java/pom.xml" />
-        <option value="$PROJECT_DIR$/kafka/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/kafka-core-java/pom.xml" />
-        <option value="$PROJECT_DIR$/kafka-core-java/src/test/java/com/consumer/Consumer.java" />
-        <option value="$PROJECT_DIR$/kafka-core-java/src/test/java/com/producer/Producer.java" />
-        <option value="$PROJECT_DIR$/kafka-core-java/files/mvn.txt" />
-      </list>
-    </option>
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-        <option name="jdkForImporter" value="1.8" />
-        <option name="lookForNested" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
-        <option value="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/build.gradle" />
       </list>
     </option>
   </component>
@@ -98,98 +139,104 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
-              <item name="files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="boot2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-core-java" type="462c0819:PsiDirectoryNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="producer" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kafka-core-java/src/main/resources" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.consumer" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Backup\JavaPrep\jms\projects\jms\kafka-core-java\src\main\resources" />
-      <recent name="E:\Backup\JavaPrep\jms\projects\jms\kafka\core-java\src\main\resources" />
+      <recent name="E:\Backup\JavaPrep\jms\projects\jms\kafka-spring-boot-2\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,75 +251,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ConsumerPractice.testing">
+  <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.jms.kafka.App" />
-      <module name="kafka" />
+      <option name="MAIN_CLASS_NAME" value="com.kafka.spring.boot2.App" />
+      <module name="jms.kafka-spring-boot-2.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.jms.kafka.*" />
+          <option name="PATTERN" value="com.kafka.spring.boot2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Testing" />
-      <module name="core-java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConsumerPractice.testing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.consumer" />
-      <option name="MAIN_CLASS_NAME" value="com.consumer.ConsumerPractice" />
-      <option name="METHOD_NAME" value="testing" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Consumer.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.consumer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.consumer" />
-      <option name="MAIN_CLASS_NAME" value="com.consumer.Consumer" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Testing.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="kafka" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Testing" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ConsumerPractice.testing" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.Testing.test" />
-        <item itemvalue="Application.Testing" />
       </list>
     </recent_temporary>
   </component>
@@ -281,165 +276,92 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="421e9e75-6f26-4c4d-bc52-a6c646f9fe33" name="Default Changelist" comment="" />
-      <created>1560563908654</created>
+      <changelist id="b4a9bd9c-c76a-42b1-9f40-a8e42b25896c" name="Default Changelist" comment="" />
+      <created>1560699781246</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560563908654</updated>
+      <updated>1560699781246</updated>
     </task>
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Consumer_test_(1) - 2019.06.15 at 14h 12m 55s.xml">
-      <configuration name="Consumer.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Consumer_test_(1) - 2019.06.15 at 14h 13m 53s.xml">
-      <configuration name="Consumer.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Consumer_test_(1) - 2019.06.15 at 14h 15m 21s.xml">
-      <configuration name="Consumer.test (1)" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Consumer_test - 2019.06.15 at 14h 18m 32s.xml">
-      <configuration name="Consumer.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Consumer_test - 2019.06.15 at 14h 18m 55s.xml">
-      <configuration name="Consumer.test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConsumerPractice_testing - 2019.06.15 at 14h 20m 44s.xml">
-      <configuration name="ConsumerPractice.testing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConsumerPractice_testing - 2019.06.15 at 14h 21m 08s.xml">
-      <configuration name="ConsumerPractice.testing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConsumerPractice_testing - 2019.06.15 at 14h 21m 40s.xml">
-      <configuration name="ConsumerPractice.testing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ConsumerPractice_testing - 2019.06.15 at 14h 23m 42s.xml">
-      <configuration name="ConsumerPractice.testing" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Consumer_test - 2019.06.15 at 14h 23m 56s.xml">
-      <configuration name="Consumer.test" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25755286" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Build" weight="0.32899022" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="sbt" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/test/java/com/jms/AppTest.java" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/main/java/com/jms/App.java" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/test/java/com/producer/Producer.java" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/test/java/com/consumer/Test.java" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/test/java/com/consumer/Consumer.java" />
-    <entry file="file://$PROJECT_DIR$/ibm-mq/src/main/java/ibm/mq/listener/practice/SendAndReceiveByListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ibm-mq/src/main/java/ibm/mq/listener/practice/KeepListenerUpAndRunningWithAnotherThread.java">
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/activemq/src/main/java/com/jms/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ibm-mq/src/main/java/ibm/mq/listener/practice/KeepListenerUpAndRunningByMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/main/java/com/jms/kafka/App.java" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/test/java/com/consumer/ConsumerPractice.java" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/main/java/com/consumer/Consumer.java" />
-    <entry file="file://$PROJECT_DIR$/kafka/core-java/src/main/resources/log4j.properties" />
-    <entry file="file://$PROJECT_DIR$/kafka/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-core-java/src/test/java/com/consumer/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="6" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-core-java/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+        <state relative-caret-position="40">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kafka-core-java/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+        <state relative-caret-position="120">
+          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-core-java/src/test/java/com/producer/Producer.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="39" column="4" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="4" />
+        <state relative-caret-position="-240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#960#976#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
+            <element signature="e#276#277#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-core-java/files/mvn.txt">
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="156" selection-start-column="156" selection-end-column="156" />
+        <state relative-caret-position="166">
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
         </state>
       </provider>
     </entry>
