@@ -1,3 +1,16 @@
 # server properties
 server:
-  port: 9092
+  port: 9093
+
+spring:
+  kafka:
+    consumer:
+      bootstrap-severs: localhost:9092
+      group-id: topic1_id
+      auto-offset-reset: earliest
+      key-desrializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      bootstrap-severs: localhost:9092
+      key-desrializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer

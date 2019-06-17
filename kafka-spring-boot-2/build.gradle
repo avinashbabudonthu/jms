@@ -47,6 +47,7 @@ dependencies{
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.boot:spring-boot-devtools"
     compile "org.springframework.boot:spring-boot-actuator"
+    compile "org.springframework.kafka:spring-kafka"
 
     compile "org.hibernate:hibernate-validator"
     compile "joda-time:joda-time:2.9.2"

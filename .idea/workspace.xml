@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4a9bd9c-c76a-42b1-9f40-a8e42b25896c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+    <list default="true" id="8f32b08c-c792-42ac-8786-95974b71619c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/jms.postman_collection.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/AppController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/Consumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.0/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jms/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jms/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-spring-boot-2/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-spring-boot-2/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-spring-boot-2/out/production/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-spring-boot-2/out/production/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/activemq/.gradle/" />
     <ignored path="$PROJECT_DIR$/activemq/build/" />
     <ignored path="$PROJECT_DIR$/activemq/out/" />
@@ -41,56 +43,83 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1471234142">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="gradle" value="1" />
+          <entry key="java" value="4" />
+          <entry key="yml" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Groovy" value="1" />
+          <entry key="JAVA" value="4" />
+          <entry key="YAML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="gradle" value="44" />
+          <entry key="java" value="636" />
+          <entry key="yml" value="162" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Groovy" value="44" />
+          <entry key="JAVA" value="636" />
+          <entry key="YAML" value="162" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="95">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#240#241#0" expanded="true" />
-                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-240" />
+            <state relative-caret-position="296">
+              <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+            </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kafka-core-java/src/main/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/log4j.properties">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/AppController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
+            <state relative-caret-position="141">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#447#448#0" expanded="true" />
+                <element signature="e#485#486#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +127,34 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
+            <state relative-caret-position="38">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/Producer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="141">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/Consumer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#284#285#0" expanded="true" />
+                <element signature="e#303#304#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,19 +171,1407 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="C:\Users\donthuav\.gradle\wrapper\dists\gradle-5.0-all\4mxuau4c77thx8zlvtz4xiez7\gradle-5.0" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="5.0" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="jms" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="jms" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":activemq" />
+                <option name="path" value="$PROJECT_DIR$/activemq" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":ibm-mq" />
+                <option name="path" value="$PROJECT_DIR$/ibm-mq" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":kafka-core-java" />
+                <option name="path" value="$PROJECT_DIR$/kafka-core-java" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":kafka-spring-boot-2" />
+                <option name="path" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":rabbit-mq" />
+                <option name="path" value="$PROJECT_DIR$/rabbit-mq" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":weblogic-queue" />
+                <option name="path" value="$PROJECT_DIR$/weblogic-queue" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'jms'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'jms'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'jms'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'jms'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'jms'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'jms' (some of the displayed tasks may belong to subprojects)." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a Spring Boot application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'jms'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'jms'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'jms'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/activemq">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':activemq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':activemq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':activemq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':activemq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':activemq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':activemq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':activemq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':activemq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':activemq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/activemq" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ibm-mq">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':ibm-mq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':ibm-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':ibm-mq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':ibm-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':ibm-mq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':ibm-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':ibm-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':ibm-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':ibm-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ibm-mq" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/kafka-core-java">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':kafka-core-java'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':kafka-core-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':kafka-core-java'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':kafka-core-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':kafka-core-java'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':kafka-core-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':kafka-core-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':kafka-core-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':kafka-core-java'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-core-java" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/kafka-spring-boot-2">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':kafka-spring-boot-2'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="cleanEclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Cleans all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="cleanEclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':kafka-spring-boot-2'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="cleanEclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles an executable jar archive containing the main classes and their dependencies." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="bootJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse classpath file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="eclipseClasspath" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':kafka-spring-boot-2'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="cleanEclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependency management declared in project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="dependencyManagement" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs this project as a Spring Boot application." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="bootRun" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates all Eclipse files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="eclipse" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse JDT settings file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="eclipseJdt" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates the Eclipse project file." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="eclipseProject" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':kafka-spring-boot-2'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/rabbit-mq">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':rabbit-mq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':rabbit-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':rabbit-mq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':rabbit-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':rabbit-mq'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':rabbit-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':rabbit-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':rabbit-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':rabbit-mq'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/rabbit-mq" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/weblogic-queue">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by project ':weblogic-queue'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="buildDependents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of project ':weblogic-queue'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="classes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in project ':weblogic-queue'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in project ':weblogic-queue'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles test classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="testClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Javadoc API documentation for the main source code." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="javadoc" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles a jar archive containing the main classes." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="jar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of project ':weblogic-queue'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes main resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="processResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from project ':weblogic-queue'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs the unit tests." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="test" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles main Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="compileJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in project ':weblogic-queue'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Runs all checks." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="check" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles the outputs of this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="assemble" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Deletes the build directory." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="clean" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles test Java source." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="compileTestJava" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in project ':weblogic-queue'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Processes test resources." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="processTestResources" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Installs the 'archives' artifacts into the local Maven repository." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="install" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Assembles and tests this project and all projects it depends on." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="buildNeeded" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of project ':weblogic-queue'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/weblogic-queue" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="15607668789682" />
+        <entry key="$PROJECT_DIR$/.gradle" value="0" />
+        <entry key="$PROJECT_DIR$/activemq/build.gradle" value="1924441859" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1898029816" />
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="3763183252" />
+        <entry key="$PROJECT_DIR$/ibm-mq/build.gradle" value="2746628531" />
+        <entry key="$PROJECT_DIR$/kafka-core-java/build.gradle" value="3288863922" />
+        <entry key="$PROJECT_DIR$/kafka-spring-boot-2/build.gradle" value="4226170244" />
+        <entry key="$PROJECT_DIR$/rabbit-mq/build.gradle" value="2030450503" />
+        <entry key="$PROJECT_DIR$/settings.gradle" value="215576821" />
+        <entry key="$PROJECT_DIR$/weblogic-queue/build.gradle" value="644734939" />
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/activemq">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/activemq" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/ibm-mq">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/ibm-mq" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/kafka-core-java">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/kafka-core-java" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/kafka-spring-boot-2">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="entries">
+                          <list>
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.1.3.RELEASE/1d636167a0afc54a971fefdecf752c6dc9a6ca35/spring-boot-gradle-plugin-2.1.3.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.1.3.RELEASE/f41963116aaf7f8a2518da01aa6f475e5c0a02f6/spring-boot-loader-tools-2.1.3.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/d6c42859b24b62034b2a5e0db5ea12c688493d48/dependency-management-plugin-1.0.6.RELEASE-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-gradle-plugin/2.1.3.RELEASE/6e5fba2632bf299b4c28a1c272ef3fa4533e8f7f/spring-boot-gradle-plugin-2.1.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-loader-tools/2.1.3.RELEASE/78b1832575cecda34bbf919641b9b00705b07265/spring-boot-loader-tools-2.1.3.RELEASE.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.spring.gradle/dependency-management-plugin/1.0.6.RELEASE/c7118365d75bca698892b5df1e683b8d6d6b87bb/dependency-management-plugin-1.0.6.RELEASE.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar" />
+                            <option value="$MAVEN_REPOSITORY$/org/springframework/spring-jcl/5.1.5.RELEASE/spring-jcl-5.1.5.RELEASE.jar" />
+                          </list>
+                        </option>
+                        <option name="path" value="$PROJECT_DIR$/kafka-spring-boot-2" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/rabbit-mq">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/rabbit-mq" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                  <entry key="$PROJECT_DIR$/weblogic-queue">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$/weblogic-queue" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="jms" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/announce" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/antlr" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/base-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/base-services-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/build-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/build-cache-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/build-comparison" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/build-init" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/build-option" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/cli" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/code-quality" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/composite-builds" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/core-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/dependency-management" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/diagnostics" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/docs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/ear" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/files" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/ide" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/ide-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/ide-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/installation-beacon" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/internal-android-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/internal-integ-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/internal-performance-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/internal-testing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/ivy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/jacoco" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/javascript" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/jvm-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/language-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/language-java" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/language-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/language-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/language-scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/launcher" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/logging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/maven" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/messaging" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/model-core" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/model-groovy" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/osgi" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/persistent-cache" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/platform-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/platform-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/platform-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/platform-play" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/plugin-development" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/plugin-use" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/plugins" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/process-services" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/publish" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/reporting" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/resources" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/resources-gcs" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/resources-http" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/resources-s3" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/resources-sftp" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/scala" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/signing" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/snapshots" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/test-kit" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/testing-base" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/testing-junit-platform" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/testing-jvm" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/testing-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/tooling-api" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/tooling-api-builders" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/tooling-native" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/version-control" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/workers" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/src/wrapper" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/ant-1.9.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/ant-launcher-1.9.13.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-api-metadata-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-base-services-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-base-services-groovy-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-build-cache-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-build-option-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-cli-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-core-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-core-api-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-docs-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-files-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-installation-beacon-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-jvm-services-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-kotlin-dsl-1.0.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-kotlin-dsl-provider-plugins-1.0.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-kotlin-dsl-tooling-builders-1.0.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-kotlin-dsl-tooling-models-1.0.4.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-launcher-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-logging-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-messaging-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-model-core-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-model-groovy-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-native-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-persistent-cache-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-process-services-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-resources-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-runtime-api-info-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-snapshots-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-tooling-api-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/gradle-wrapper-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-announce-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-antlr-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-build-cache-http-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-build-comparison-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-build-init-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-code-quality-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-composite-builds-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-dependency-management-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-diagnostics-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-ear-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-ide-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-ide-native-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-ide-play-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-ivy-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-jacoco-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-javascript-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-language-groovy-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-language-java-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-language-jvm-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-language-native-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-language-scala-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-maven-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-osgi-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-platform-base-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-platform-jvm-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-platform-native-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-platform-play-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-plugin-development-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-plugin-use-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-plugins-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-publish-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-reporting-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-resources-gcs-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-resources-http-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-resources-s3-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-resources-sftp-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-scala-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-signing-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-test-kit-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-testing-base-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-testing-junit-platform-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-testing-jvm-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-testing-native-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-tooling-api-builders-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-tooling-native-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-version-control-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/gradle-workers-5.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-5.0-all/4mxuau4c77thx8zlvtz4xiez7/gradle-5.0/lib/plugins/ivy-2.3.0.jar" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../../../spring/boot-2/projects/spring-boot-2" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../../../third-party-libraries/projects/third-party-libraries" value="PREVIEW" />
+        <entry key="C:/codebases/poc/third-party-libraries" value="PREVIEW" />
+        <entry key="C:/study/practiceProjects/preparation/third-party-libraries" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java" />
-        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/kafka-spring-boot-2/build.gradle" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/producer/Producer.java" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/controller/AppController.java" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/consumer/Consumer.java" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/Consumer.java" />
+        <option value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/AppController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
     <option name="y" value="20" />
-    <option name="width" value="1349" />
+    <option name="width" value="1350" />
     <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -136,6 +1579,7 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -145,32 +1589,6 @@
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
               <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="jms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kafka-core-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
@@ -213,31 +1631,29 @@
               <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="world" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="jms" type="b2602c69:ProjectViewProjectNode" />
               <item name="jms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kafka-spring-boot-2" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Backup\JavaPrep\jms\projects\jms\kafka-spring-boot-2\src\main\resources" />
-    </key>
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560786143231" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -254,10 +1670,10 @@
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.kafka.spring.boot2.App" />
-      <module name="jms.kafka-spring-boot-2.main" />
+      <module name="kafka-spring-boot-2_main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.kafka.spring.boot2.*" />
+          <option name="PATTERN" value="com.kafka.spring.boot2.hello.world.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -276,92 +1692,107 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4a9bd9c-c76a-42b1-9f40-a8e42b25896c" name="Default Changelist" comment="" />
-      <created>1560699781246</created>
+      <changelist id="8f32b08c-c792-42ac-8786-95974b71619c" name="Default Changelist" comment="" />
+      <created>1560777893086</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1560699781246</updated>
+      <updated>1560777893086</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info id="Designer" />
       <window_info id="Image Layers" />
+      <window_info id="Designer" />
       <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
       <window_info id="Capture Tool" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Build" weight="0.32899022" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32899022" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Event Log" sideWeight="0.50067115" side_tool="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Build" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" weight="0.32907802" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32899022" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49932885" weight="0.32907802" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="sbt" />
-      <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="right" id="Gradle" />
-      <window_info anchor="right" id="Palette&#9;" />
       <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="41" column="59" selection-start-line="41" selection-start-column="59" selection-end-line="41" selection-end-column="59" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="38">
           <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-core-java/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="95">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#240#241#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/build.gradle">
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/AppController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
+        <state relative-caret-position="141">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#284#285#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-spring-boot-2/src/main/java/com/kafka/spring/boot2/hello/world/Producer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -370,7 +1801,7 @@
     <states>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>1.8</last-edited>
+          <last-edited>JDK-1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
