@@ -50,6 +50,8 @@ dependencies{
 
     compile "org.hibernate:hibernate-validator"
     compile "joda-time:joda-time:2.9.2"
+    
+    compile "org.springframework.kafka:spring-kafka"
 
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
