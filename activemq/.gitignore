@@ -73,3 +73,15 @@ folder1
 *.MF
 *.zip
 taskArtifacts
+.idea
+/.idea/
+/.idea/*
+build
+/build/
+*/build/*
+/logs/
+*/logs/*
+/out/
+*/out/*
+/bin/
+*/bin/*

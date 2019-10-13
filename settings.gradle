@@ -1,8 +1,0 @@
-rootProject.name = 'jms'
-
-include(':activemq')
-include(':ibm-mq')
-include(':weblogic-queue')
-include(':rabbit-mq')
-include(':kafka-core-java')
-include(':kafka-spring-boot-2')
