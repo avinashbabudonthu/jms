@@ -17,3 +17,8 @@ rabbitmq-plugins.bat enable rabbitmq_management
 * open browser and open this url - http://localhost:15672
 	* default username/pwd are guest/guest
 	* this is rabbit mq management console
+
+## About Rabbit MQ
+
+### Message Broker Flow
+![picture](images/message-broker.jpg)
