@@ -18,7 +18,7 @@ rabbitmq-plugins.bat enable rabbitmq_management
 	* default username/pwd are guest/guest
 	* this is rabbit mq management console
 
-## About Rabbit MQ
+## Rabbit MQ Notes
 
 ### Message Broker Flow
 ![picture](images/message-broker.jpg)
