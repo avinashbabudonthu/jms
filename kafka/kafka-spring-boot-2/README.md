@@ -1,2 +1,0 @@
-# List of Projects
-- YTD
