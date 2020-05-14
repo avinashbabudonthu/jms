@@ -30,3 +30,22 @@
 	* Consumer API
 	* Connect API
 	* Streams API
+	
+## Kafka Topics and Partitions
+### Topic
+* Kafka topic is entity like table in database
+* Topic live inside kafka broker
+* Kafka clients uses topic name to produce and consume messages
+* kafka consumers generally poll continuously for new messsages
+### Partitions
+* Where message actually located inside topic
+* Each topic can have one or more partitions
+* Partitions have effect on scalable message consumption
+* Each partition is ordered, immutable, sequence of records
+* Each record has number associated with it called `offset`
+* `offset` is generated when record is published to kafka topic
+* Each partition is independent of each other
+* Ordering is guaranteed only at partition level
+* Partitions continuously grow as new records produced and offset gets incremented one by one
+* All records are persisted in commit log in file system where kafka is installed
+* Producer can control to which partition the message can go
