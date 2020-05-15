@@ -17,5 +17,5 @@ gradle init --type pom
 * Dependencies - Refer [pom.xml](pom.xml) or [build.gradle](build.gradle)
 
 ## Examples
-* Producer to send message to Kafka Topic - [Producer.java](src/main/java/com/producer/Producer.java)
-* Consumer to receive message to Kafka Topic - [Consumer.java](src/main/java/com/consumer/Consumer.java)
+* Producer to send message to Kafka Topic - [Producer.java](src/test/java/com/producer/Producer.java)
+* Consumer to receive message to Kafka Topic - [Consumer.java](src/test/java/com/consumer/Consumer.java)
