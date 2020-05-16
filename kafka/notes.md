@@ -105,3 +105,17 @@
 *  cluster will be managed by zoo-keeper
 * All brokers send heart beat to zoo-keeper at regular intervals to ensure state of kafka broker is healthy to serve client requests
 * Client requests distributed among 3 brokers. If any of the broker goes down then zoo-keeper gets notified then all client requests will be routed to other available brokers
+
+## Setting up kafka cluster in local with 3 brokers
+* In order to start multiple kafk brokers, we need to have new `server.properties` file with new broker details. This new `server.properties` should have unique values compared to other `server.properties`
+```
+broker.id=1
+listeners=PLAINTEXT://localhost:9093
+log.dirs=C:\softwares\kafka\logs2
+auto.create.topics.enable=false(optional)
+```
+* Start `zoo-keeper`
+```
+\zoo-keeper\apache-zookeeper-3.6.1-bin.tar\apache-zookeeper-3.6.1-bin\apache-zookeeper-3.6.1-bin\bin\zkServer.cmd
+```
+* Create new `server.properties` files. Pass each `server.properties` while starting the broker
