@@ -128,3 +128,6 @@ auto.create.topics.enable=false(optional)
 ```
 * Go to log files
 	* we will have log folder with log files each with respective broker's logs
+	
+## How kafka cluster distributes the client requests
+### How Topics are distributed across available brokers
