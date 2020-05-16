@@ -114,8 +114,17 @@ listeners=PLAINTEXT://localhost:9093
 log.dirs=C:\softwares\kafka\logs2
 auto.create.topics.enable=false(optional)
 ```
+* Create 3 new `server.properties` files. Pass each `server.properties` while starting the broker
+	* Refer samples `server.properties` files - https://github.com/avinashbabudonthu/jms/tree/master/kafka/kafka-server-properies-files
 * Start `zoo-keeper`
 ```
 \zoo-keeper\apache-zookeeper-3.6.1-bin.tar\apache-zookeeper-3.6.1-bin\apache-zookeeper-3.6.1-bin\bin\zkServer.cmd
 ```
-* Create new `server.properties` files. Pass each `server.properties` while starting the broker
+* Start 3 brokers
+```
+.\bin\windows\kafka-server-start.bat .\config\server.properties
+.\bin\windows\kafka-server-start.bat .\config\server-1.properties
+.\bin\windows\kafka-server-start.bat .\config\server-2.properties
+```
+* Go to log files
+	* we will have log folder with log files each with respective broker's logs
