@@ -122,6 +122,35 @@
 			"response": []
 		},
 		{
+			"name": "save-student-asynchronous-with-send-method-and-producer-record-and-header",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 5,\n\t\"name\": \"Avery\",\n\t\"course\": \"spring boot 2 kafka header\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/v5/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v5",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "get-kafka-template",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
