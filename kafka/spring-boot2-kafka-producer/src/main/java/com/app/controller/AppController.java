@@ -58,6 +58,15 @@ public class AppController {
 		return student;
 	}
 
+	@SneakyThrows
+	@PostMapping(value = "/v5/students", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
+	public Student sendStudentMessageAsyncUsingProducerRecordWithHeader(@RequestBody Student student) {
+		log.info("Before Send student, student={}", student);
+		kafkaProducer.sendStudentMessageAsyncUsingProducerRecordWithHeader(student);
+		log.info("After Send student, student={}", student);
+		return student;
+	}
+
 	@GetMapping(value = "/v1/kafka-template", produces = APPLICATION_JSON_VALUE, consumes = APPLICATION_JSON_VALUE)
 	public KafkaTemplate<Integer, String> getKafkaTemplate() {
 		return kafkaProducer.getKafkaTemplate();

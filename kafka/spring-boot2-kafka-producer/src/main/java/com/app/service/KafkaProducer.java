@@ -1,8 +1,12 @@
 package com.app.service;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.kafka.clients.producer.ProducerRecord;
+import org.apache.kafka.common.header.Header;
+import org.apache.kafka.common.header.internals.RecordHeader;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
@@ -106,6 +110,33 @@ public class KafkaProducer {
 		String value = objectMapper.writeValueAsString(student);
 
 		ProducerRecord<Integer, String> producerRecord = new ProducerRecord<>("students-topic", key, value);
+
+		ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.send(producerRecord);
+		listenableFuture.addCallback(new ListenableFutureCallback<SendResult<Integer, String>>() {
+
+			@Override
+			public void onSuccess(SendResult<Integer, String> sendResult) {
+				handleSuccess(key, value, sendResult);
+			}
+
+			@Override
+			public void onFailure(Throwable throwable) {
+				handleFailure(key, value, throwable);
+			}
+		});
+	}
+
+	@SneakyThrows
+	public void sendStudentMessageAsyncUsingProducerRecordWithHeader(Student student) {
+		log.info("Send student={} to Kafka topic asynchronously", student);
+		Integer key = student.getId();
+		String value = objectMapper.writeValueAsString(student);
+
+		List<Header> recordHeaders = new ArrayList<>();
+		Header header1 = new RecordHeader("source", "student-service".getBytes());
+		recordHeaders.add(header1);
+		ProducerRecord<Integer, String> producerRecord = new ProducerRecord<>("students-topic", null, key, value,
+				recordHeaders);
 
 		ListenableFuture<SendResult<Integer, String>> listenableFuture = kafkaTemplate.send(producerRecord);
 		listenableFuture.addCallback(new ListenableFutureCallback<SendResult<Integer, String>>() {
