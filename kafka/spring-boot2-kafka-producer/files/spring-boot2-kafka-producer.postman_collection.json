@@ -1,18 +1,18 @@
 {
 	"info": {
-		"_postman_id": "6d7a1f3a-68bd-4626-b6f5-49c053ea69e3",
+		"_postman_id": "10285a1a-f41d-41ad-a9ac-db57d2a270e1",
 		"name": "spring-boot2-kafka-producer",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "save-student",
+			"name": "save-student-asynchronous",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"id\": 1,\n\t\"name\": \"ana\",\n\t\"course\": \"spring boot\"\n}",
+					"raw": "{\n\t\"id\": 3,\n\t\"name\": \"anil\",\n\t\"course\": \"spring boot kafka\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -28,6 +28,93 @@
 					"port": "9000",
 					"path": [
 						"v1",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save-student-synchronous",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 2,\n\t\"name\": \"Amelia\",\n\t\"course\": \"kafka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/v2/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v2",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save-student-asynchronous-with-send-method",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 2,\n\t\"name\": \"Amelia\",\n\t\"course\": \"kafka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/v3/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v3",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save-student-asynchronous-with-send-method-and-producer-record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": 3,\n\t\"name\": \"Amelia\",\n\t\"course\": \"kafka\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/v4/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"v4",
 						"students"
 					]
 				}
