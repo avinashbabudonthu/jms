@@ -1,0 +1,13 @@
+server.port: 9001
+spring.profiles.active: localhost
+
+---
+spring:
+  profiles: localhost  kafka:
+    consumer:      bootstrap-servers: localhost:9092, localhost:9093, localhost:9094
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: students-group-id
+    admin:
+      properties:        bootstrap.servers: localhost:9092, localhost:9093, localhost:9094
+        

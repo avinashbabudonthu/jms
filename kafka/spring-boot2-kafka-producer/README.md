@@ -18,9 +18,12 @@ mvn archetype:generate -DgroupId=com.spring.boot2.kafka.producer -DartifactId=sp
 gradle init --type pom
 ```
 
-## Steps
+## Dependencies
 * Add `spring-kafka`, `spring-kafka-test` dependencies
 * Dependencies - Refer [pom.xml](pom.xml) or [build.gradle](build.gradle)
+
+## Properties
+* Add kafka properties in [application.yml](src/main/resources/application.yml)
 
 ## API
 * Refer [files/spring-boot2-kafka-producer.postman_collection.json](files/spring-boot2-kafka-producer.postman_collection.json)

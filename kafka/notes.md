@@ -224,3 +224,43 @@ spring:
 			value-serializer: org.apache.kafka.common.serialization.StringSerializer
 ```
 * `org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration` reads kafka properties from `application.yml` and create `KafkaTemplate`
+
+## spring Kafka Consumers
+* `MessageListenerContainer` interface. It has 2 implementations
+	* KafkaMessageListenerContainer
+	* ConcurrentMessageListenerContainer
+* KafkaListener annotation
+	* Uses `ConcurrentMessageListenerContainer` internally
+### KafkaMessageListenerContainer
+* Implementation of MessageListenerContainer
+* Polls the records
+* Commits the offsets
+* Single threaded. Means poll call is handled by single thread
+### ConcurrentMessageListenerContainer
+* Represents multiple `KafkaMessageListenerContainer`
+### KafkaListener annotation
+* Simplest way to build kafka consumer
+* Sample code
+	* Add `@KafkaListener` annotation to a method in class which is bean
+	* Add `@EnableKafka` annotation to Configuration class 
+```
+@KafkaListener
+public void onMessage(ConsumerRecord<Integer, String> consumerRecord){
+	log.info("consumer-record={}", consumerRecord);
+}
+
+@Configuration
+@EnableKafka
+@Slf4j
+public class AppConfig{
+	---
+}
+```
+* We need to provide following KafkaConsumer configuration
+	* key-deserializer
+	* value-deserializer
+	* group-id
+* References - https://docs.spring.io/spring-kafka/reference/html/#receiving-messages
+
+## Spring Boot Kafka Consumer auto configuration
+* Every thing is from from `KafkaAutoConfiguration`, `KafkaAnnotationDrivenConfiguration` classes
