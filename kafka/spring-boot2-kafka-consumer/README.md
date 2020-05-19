@@ -73,3 +73,6 @@ gradlew clean compileJava build
 ```
 java -jar build\libs\spring-boot2-kafka-consumer-1.0.jar
 ```
+
+## References
+* https://docs.spring.io/spring-kafka/reference/html/#kafka-listener-annotation
