@@ -7,3 +7,4 @@
 
 ### Udemy
 * Apache Kafka for Developers using Spring Boot
+* Apache Kafka Series - Kafka Connect Hands-on Learning
