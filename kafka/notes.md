@@ -1,5 +1,23 @@
 # Kafka Notes
 
+## Why Kafka in bullet points
+* We have source system and target system and they exchange data
+* So next step is there are number of source systems and number of target systems and all of them what to exchange data with one another then things become very complicated
+* Lets say we 5 source systems and 6 target systems then we need to write 5*6 == 30 integrations
+* Each integration can have with it's difficulties like
+	* Protocol - how data has to be exchanged like TCP, Http, REST, FTP, JDBC etc
+	* Data Format like Binary, CSV, XML, JSON, AVRO etc
+	* Data schema and evaluation
+* There can increased load from the connections
+* To solve above problem we need to use Apacha Kafka
+	* Allows decouple data streams and systems (source and target)
+	* Source systems send data to Apache Kafka
+	* Target system take data from Apacha Kafka
+	* Once we have data in Kafka we can put in systems like
+		* Database
+		* Analytics systems
+		* Schema systems
+
 ## Basics
 * Message retaining
 	* In traditional messaging system has transient message persistance. Means once message is consumed by consumer it will be deleted from the message broker
@@ -8,6 +26,30 @@
 * Any consumer who has access to broker can read the message
 * Kafka is distributed streaming system
 * Kafka is streaming system. Not a just messaging system
+* Created by LinkedIn and open sourced
+* Currently maintained by Confluent
+* Distributed
+* Resilient Architecture
+* Fault Tolerant
+* Horizontal Scalability
+	* Can have 100s of brokers
+	* Can scale to millions of messages per second
+* High performance (latency of less than 10 ms)
+
+## Use cases
+* Messaging system
+* Activity Tracking
+* Gather metrics from many different locations
+* Application log gathering
+* Stream processing
+	* Kafka streams API
+	* Spark
+* De-coupling system dependencies
+* Integration with big data systems like
+	* Spark
+	* Flink
+	* Storm
+	* Hadoop
 
 ## Kafka Terminology and Client APIs
 * Kafka Cluster: consists of multiple brokers
@@ -33,7 +75,14 @@
 	
 ## Kafka Topics and Partitions
 ### Topic
-* Kafka topic is like table in database
+* Kafka topic is like table in database (without constraints)
+* We can have as many topics we want
+* Every topic is defined by it's name
+* Topics are split into `Partitions`
+	* Each partition has number starts with zero(0) like partition-0, partition-1
+	* Each partition is ordered
+	* Each message within partition get an incermental id called `offset`
+![picture](images/topic-partition-offset.jpg)
 * Topic live inside kafka broker
 * Kafka clients uses topic name to produce and consume messages
 * Kafka consumers generally poll continuously for new messsages
