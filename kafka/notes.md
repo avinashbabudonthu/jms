@@ -51,6 +51,13 @@
 	* Storm
 	* Hadoop
 
+## History
+* Kafka Connect introduced in Kafka 0.9.x in Nov-2015
+* Kafka Streams API introduced in Kafka 0.10.x in May-2016
+* Kafka 0.10.1 and 0.10.2 - end 2016 to March 2017
+	* Improved Connect API
+	* Single Message Transforms API
+	
 ## Kafka Terminology and Client APIs
 * Kafka Cluster: consists of multiple brokers
 * In order to manage multiple brokers we need Zookeeper
@@ -64,8 +71,8 @@
 * Client APIs of kafka
 	* Kafka connect
 		* Source connector: Used to pull the data from external data source such as database, file system, elastic search into kafka topic
-		* Sink connector: opposite of source connector
-	* Kafka streams API
+		* Sink connector: Push data from kafka topic to external data sources such as ElasticSearch, database, file system etc
+	* Kafka streams API - Kafka to Kafka data transfer
 		* Take the data from kafka and perform simple to complex transformations and put it back to kafka
 * Finally kafka client APIs as described above
 	* Producer API
