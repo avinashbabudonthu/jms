@@ -50,3 +50,5 @@
 
 ## Kafka connect cluster distributed architecture
 ![picture](images/kafka-connect-cluster-architecture.jpg)
+
+## Kafka connect logs
