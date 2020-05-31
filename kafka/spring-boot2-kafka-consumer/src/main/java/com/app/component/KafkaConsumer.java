@@ -10,7 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class KafkaConsumer {
 
-	@KafkaListener(topics = { "students-topic" })
+	@KafkaListener(topics = { "employee-topic-1" })
 	public void onMessage(ConsumerRecord<Integer, String> consumerRecord) {
 		log.info("consumer-record={}", consumerRecord);
 	}
