@@ -9,6 +9,10 @@ git clone https://github.com/confluentinc/cp-all-in-one.git
 ```
 docker-compose up --build
 ```
+* To run as demon
+```
+docker-compose -d up --build
+```
 ![picture](images/kafka-confluent-platform-docker-compose-command-execution.jpg)
 * After starting check the status
 ```
