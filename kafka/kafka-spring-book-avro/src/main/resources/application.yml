@@ -1,0 +1,22 @@
+server.port: 9000
+spring.profiles.active: localhost
+
+---
+spring:
+  profiles: localhost
+  kafka:
+    bootstrap-servers: localhost:9092
+    properties:
+      schema.registry.url: http://127.0.0.1:8081
+    template:
+      default-topic: user-topic-avro-1
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    consumer:
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+app:
+  topic.name: user-topic-avro-1
