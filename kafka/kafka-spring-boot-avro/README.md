@@ -1,6 +1,8 @@
 # Spring Boot Kafka Avro Producer Consumer
 
 ## Requirement
+* Spring Boot Kafka Avro Producer
+* Spring Boot Kafka Avro Consumer
 
 
 ## Maven Command
