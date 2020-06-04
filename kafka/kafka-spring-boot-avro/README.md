@@ -16,7 +16,21 @@ gradle init --type pom
 ```
 
 ## Steps
-* Dependencies - Refer [pom.xml](pom.xml) or [build.gradle](build.gradle)
+* Dependencies refer in [pom.xml](pom.xml) or [build.gradle](build.gradle)
+* Add `avro-maven-plugin` plugin
+* Generate pojo classes as per schema [user.avsc](src/main/resources/avro/user.avsc)
+```
+mvn clean compile package
+```
+* We can see model classes getting generated in the package [com.app.avro.model](src/main/java/com/app/avro/model)
+	* Model classes are generated in this package because following code in `avro-maven-plugin`
+```
+<configuration>
+	<sourceDirectory>${project.basedir}/src/main/resources/avro</sourceDirectory>
+	<outputDirectory>${project.basedir}/src/main/java/</outputDirectory>
+	<stringType>String</stringType>
+</configuration>
+```
 
 ## API
 * Refer [files/.json](files/.json)
