@@ -33,4 +33,4 @@ mvn clean compile package
 	<stringType>String</stringType>
 </configuration>
 ```
-* [Producer](src/main/java/com/avro/Producer.java)
+* [Producer](src/test/java/com/avro/Producer.java)
