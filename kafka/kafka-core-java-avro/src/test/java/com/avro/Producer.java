@@ -1,20 +1,28 @@
-package com.app.producer;
+package com.avro;
 
 import java.util.Properties;
+import java.util.stream.IntStream;
 
 import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.junit.Test;
 
 import com.app.avro.model.User;
 
 import io.confluent.kafka.serializers.KafkaAvroSerializer;
 
-public class KafkaProducerPractice {
+public class Producer {
 
-	public static void main(String[] args) {
+	@Test
+	public void send100Messages() {
+		IntStream.rangeClosed(1, 100).forEach(i -> send(i));
+	}
+
+	public void send(int i) {
+
 		Properties properties = new Properties();
 		properties.setProperty("bootstrap.servers", "127.0.0.1:9092");
 		properties.setProperty("acks", "1");
@@ -27,7 +35,7 @@ public class KafkaProducerPractice {
 		String topic = "user-topic-avro-1";
 
 		User user = User.newBuilder().setName("Ava").setAge(21).build();
-		ProducerRecord<String, User> producerRecord = new ProducerRecord<>(topic, "1", user);
+		ProducerRecord<String, User> producerRecord = new ProducerRecord<>(topic, String.valueOf(i), user);
 
 		kafkaProducer.send(producerRecord, new Callback() {
 
@@ -44,5 +52,7 @@ public class KafkaProducerPractice {
 
 		kafkaProducer.flush();
 		kafkaProducer.close();
+
 	}
+
 }

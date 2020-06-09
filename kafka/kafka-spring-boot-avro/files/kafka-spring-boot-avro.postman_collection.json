@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "b143eb96-0e2b-4eb0-a904-e290f1f3fce5",
-		"name": "kafka-spring-book-avro",
+		"_postman_id": "436bf0a9-5b75-4066-a145-d3ede9584e71",
+		"name": "kafka-spring-boot-avro",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -29,7 +29,8 @@
 					"path": [
 						"users"
 					]
-				}
+				},
+				"description": "com.app.controller.AppController.sendMessageToKafkaTopic"
 			},
 			"response": []
 		}

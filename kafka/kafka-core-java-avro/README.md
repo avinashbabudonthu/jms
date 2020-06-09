@@ -1,13 +1,11 @@
-# Spring Boot Kafka Avro Producer Consumer
+# Kafka Core Java Avro
 
 ## Requirement
-* Spring Boot Kafka Avro Producer
-* Spring Boot Kafka Avro Consumer
-
+* Send Avro message to Kafka topic
 
 ## Maven Command
 ```
-mvn archetype:generate -DgroupId=com.kafka.spring.boot.avro -DartifactId=kafka-spring-boot-avro -Dversion=1.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+
 ```
 
 ## Gradle Command
@@ -16,7 +14,11 @@ gradle init --type pom
 ```
 
 ## Steps
-* Dependencies refer in [pom.xml](pom.xml) or [build.gradle](build.gradle)
+* Dependencies - Refer [pom.xml](pom.xml) or [build.gradle](build.gradle)
+
+## Steps
+* Start [Kafka Confluent](https://github.com/avinashbabudonthu/jms/blob/master/kafka/kafka-confluent-platform-setup.md#kafka-confluent-platform-setup-in-windows-machine-using-docker) docker container in local
+* Create [avro schema](src/main/resources/avro/user.avsc)
 * Add `avro-maven-plugin` plugin
 * Generate pojo classes as per schema [user.avsc](src/main/resources/avro/user.avsc)
 ```
@@ -31,6 +33,4 @@ mvn clean compile package
 	<stringType>String</stringType>
 </configuration>
 ```
-
-## API
-* Refer [files/kafka-spring-boot-avro.postman_collection.json](files/kafka-spring-boot-avro.postman_collection.json)
+* [Producer](src/main/java/com/avro/Producer.java)
