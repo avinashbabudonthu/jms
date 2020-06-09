@@ -17,6 +17,7 @@ spring:
       group-id: group_id
       auto-offset-reset: earliest
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      ## value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+      value-deserializer: com.app.config.CustomKafkaAvroDeserializer
 app:
   topic.name: user-topic-avro-1

@@ -21,6 +21,11 @@ public class Producer {
 		IntStream.rangeClosed(1, 100).forEach(i -> send(i));
 	}
 
+	@Test
+	public void sendMessages() {
+		send(101);
+	}
+
 	public void send(int i) {
 
 		Properties properties = new Properties();
@@ -34,7 +39,7 @@ public class Producer {
 		KafkaProducer<String, User> kafkaProducer = new KafkaProducer<>(properties);
 		String topic = "user-topic-avro-1";
 
-		User user = User.newBuilder().setName("Ava").setAge(21).build();
+		User user = User.newBuilder().setName("Amili").setAge(21).build();
 		ProducerRecord<String, User> producerRecord = new ProducerRecord<>(topic, String.valueOf(i), user);
 
 		kafkaProducer.send(producerRecord, new Callback() {

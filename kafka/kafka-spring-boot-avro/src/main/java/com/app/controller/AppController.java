@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.app.avro.model.User;
-import com.app.producer.ProducerComponent;
+import com.app.kafka.ProducerComponent;
 
 @RestController
 public class AppController {

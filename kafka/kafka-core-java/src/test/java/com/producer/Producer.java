@@ -19,7 +19,7 @@ public class Producer {
 	@SneakyThrows
 	@Test
 	public void sendMessageWithoutKey() {
-		final String topicName = "topic1";
+		final String topicName = "user-topic-avro-1";
 		final Random random = new Random();
 
 		Properties properties = new Properties();
