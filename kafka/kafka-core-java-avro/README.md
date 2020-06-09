@@ -5,7 +5,7 @@
 
 ## Maven Command
 ```
-
+mvn archetype:generate -DgroupId=com.kafka.core.java.avrt -DartifactId=kafka-core-java-avro -Dversion=1.0 -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
 ## Gradle Command
