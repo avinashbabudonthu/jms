@@ -2,8 +2,8 @@
 
 ## Why Kafka in bullet points
 * We have source system and target system and they exchange data
-* So next step is there are number of source systems and number of target systems and all of them what to exchange data with one another then things become very complicated
-* Lets say we 5 source systems and 6 target systems then we need to write 5*6 == 30 integrations
+* So next step is there are number of source systems and number of target systems. When all of them want to exchange data with one another then things become very complicated
+* Lets say we 5 source systems and 6 target systems then we need to write (5*6) == 30 integrations
 * Each integration can have with it's difficulties like
 	* Protocol - how data has to be exchanged like TCP, Http, REST, FTP, JDBC etc
 	* Data Format like Binary, CSV, XML, JSON, AVRO etc
