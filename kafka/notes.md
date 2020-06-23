@@ -26,7 +26,7 @@
 * Any consumer who has access to broker can read the message
 * Kafka is distributed streaming system. Not a just messaging system
 * Created by LinkedIn and open sourced
-* Currently maintained by `Confluent`
+* Currently maintained by `Confluent`. Refer [confluent Docs](https://docs.confluent.io/current/)
 * Distributed
 * Resilient Architecture
 * Fault Tolerant
