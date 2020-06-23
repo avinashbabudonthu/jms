@@ -331,3 +331,30 @@ public class AppConfig{
 
 ## Spring Boot Kafka Consumer auto configuration
 * Every thing is from from `KafkaAutoConfiguration`, `KafkaAnnotationDrivenConfiguration` classes
+
+## Kafka Schema Registry
+### Why schema registry
+* Kafka takes bytes as input and publish them
+* Kafka does not perform any data verification
+* Producer sends bytes (0s and 1s)
+* Multiple consumers receive them
+* What if producer sends bad data? what is field gets renamed? what if data format changes? - then consumers will BREAK
+* We need data to be self describable
+* We need to be able to evovle data without breaking downstream consumers. For this we need `schema` and `schema registry`
+
+### What if kafka brokers verify messages they receive?
+* This will break what makes so good
+	* Kafka does not parse or even read data (no CPU usage)
+	* Kafka takes the bytes as input without even loading them into memory (that is called zero copy)
+	* Kafka distributes bytes
+	* As for kafak, it does not know if data is Integer or String etc
+* If we change able behavior then we see performance hit
+
+### Solve above issue with Schema Registry
+* Schema registry has to be separate component
+* Producers and consumes should be able talk to it
+* Schema registry must able to reject bad data
+* Common data format must be agreed upon. Data format should have following characteristics:
+	* Support Schemas
+	* Support Evolution
+	* Lightweight
