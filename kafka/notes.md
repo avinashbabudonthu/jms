@@ -79,7 +79,7 @@
 	* Kafka to Kafka data transfer
 	* Take the data from kafka and perform simple to complex transformations and put it back to kafka
 * Offset
-* [__consumer_offsets]((#consumer-offset))
+* [__consumer_offsets](#consumer-offset)
 * [Consumer Groups](#consumer-groups)
 * [Commit Logs](#commit-log)
 * [Retention Policy](#retention-policy): Represents the number of replicas in sync with each other in the cluster including leder and follower replica
