@@ -82,10 +82,10 @@
 * [__consumer_offsets](#consumer-offset)
 * [Consumer Groups](#consumer-groups)
 * [Commit Logs](#commit-log)
-* [Retention Policy](#retention-policy): Represents the number of replicas in sync with each other in the cluster including leder and follower replica
+* [Retention Policy](#retention-policy): Determines how long the message is going to be retained
 * Broker Controller: Let's say we have kafka clusted with 3 brokers. out of 3 brokers 1 broker will behave as controller. Normally this will be first broker which joined the cluster
 * replication-factor: number of copies of same message
-* [ISR - In-sync replica](#in-sync-replica-isr)
+* [ISR - In-sync replica](#in-sync-replica-isr): Represents the number of replicas in sync with each other in the cluster including leder and follower replica
 * [Leader Replica](#kafka-handling-data-loss)
 * [Follower Replica](#kafka-handling-data-loss)
 * Record Accumulator
