@@ -1,7 +1,7 @@
 # Kafka Connect Notes
 ## Two types of kafka connect
-* Source connector: Used to pull the data from external data source such as database, file system, elastic search into kafka topic
-* Sink connector: Push data from kafka topic to external data sources such as ElasticSearch, database, file system etc
+* Source connector: Used to pull the data from external data source such as database, file system, ElasticSearch into kafka topic
+* Sink connector: Push data from kafka topic to external data sources such as database, file system, ElasticSearch etc
 
 ## Some Source Connectors
 * FileSystemSourceConnector
@@ -40,7 +40,7 @@
 * Very easy to start with. useful for developing and testing
 * Not fault tolerant
 * No scalability
-* Hart to monitor
+* Hard to monitor
 ### Kafka Connect workers distributed or cluster
 * Multiple workers run configuration and tasks
 * Configuration is submitted using REST API
