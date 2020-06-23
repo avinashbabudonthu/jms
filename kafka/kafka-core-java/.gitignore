@@ -85,3 +85,11 @@ build
 */out/*
 /bin/
 */bin/*
+/.settings/
+*/.settings/*
+.classpath
+.factorypath
+.project
+*.iml
+/.gradle/
+*/.gradle/*
