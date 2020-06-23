@@ -1,6 +1,6 @@
 # Kafka Notes
 
-## Why Kafka in bullet points
+## Why Kafka
 * We have source system and target system and they exchange data
 * So next step is there are number of source systems and number of target systems. When all of them want to exchange data with one another then things become very complicated
 * Lets say we 5 source systems and 6 target systems then we need to write (5*6) == 30 integrations
@@ -62,9 +62,11 @@
 * Cluster
 	* consists of multiple brokers
 	* In order to manage multiple brokers in cluster we need Zookeeper. Zookeeper keeps track of health of brokers and manage the cluster for you
-* Topic
-* Partition
+* [Topic](#topic)
+* [Partition](#partitions)
 * Partitioner
+	* [Send message without key](#sending-message-without-key)
+	* [Send message with key](#sending-message-with-key)
 * Producer
 	* Client to kafka broker
 	* Produce new data to kafka
@@ -77,12 +79,17 @@
 	* Kafka to Kafka data transfer
 	* Take the data from kafka and perform simple to complex transformations and put it back to kafka
 * Offset
-* `__consumer_offsets`
-* Commit Logs
-* Retention Policy
+* [__consumer_offsets]((#consumer-offset))
+* [Consumer Groups](#consumer-groups)
+* [Commit Logs](#commit-log)
+* [Retention Policy](#retention-policy): Represents the number of replicas in sync with each other in the cluster including leder and follower replica
 * Broker Controller: Let's say we have kafka clusted with 3 brokers. out of 3 brokers 1 broker will behave as controller. Normally this will be first broker which joined the cluster
 * replication-factor: number of copies of same message
 * [ISR - In-sync replica](#in-sync-replica-isr)
+* [Leader Replica](#kafka-handling-data-loss)
+* [Follower Replica](#kafka-handling-data-loss)
+* Record Accumulator
+* RecordBatch
 	
 ## Kafka Topics and Partitions
 ### Topic
@@ -272,7 +279,7 @@ bootstrap-servers: localhost:9092, localhost:9093, localhost:9094 ## broker urls
 key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
 value-serializer: org.apache.kafka.common.serialization.StringSerializer
 ```
-* We can write custom key-Serializer or value-serializer
+* We can write custom key-serializer or value-serializer
 * KafkaTemplate Auto configuration with Spring Boot `application.yml`
 ```
 spring:
