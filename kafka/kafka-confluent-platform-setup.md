@@ -27,3 +27,4 @@ PS C:\softwares\kafka-confluent\cp-all-in-one\cp-all-in-one> docker-compose ps
 
 ## Reference
 * https://nielsberglund.com/2019/06/18/confluent-platform--kafka-for-a-.net-developer-on-windows/
+* https://nielsberglund.com/2018/07/10/install-confluent-platform-kafka-on-windows/

@@ -1,0 +1,37 @@
+spring.profiles.active: avro
+# app.topic.name: practice-topic-1
+app.topic.name: practice-topic-2 # practice topic without schema registered
+
+---
+server.port: 9000
+spring:
+  profiles: avro
+  kafka:
+    bootstrap-servers: localhost:9092
+    properties:
+      schema.registry.url: http://127.0.0.1:8081
+    template:
+      default-topic: user-topic-avro-1
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    consumer:
+      group-id: group_id
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+
+---
+server.port: 9001
+spring:
+  profiles: string
+  kafka:
+    ## bootstrap-servers: localhost:9092
+    properties:
+      schema.registry.url: http://127.0.0.1:8081
+    template:
+      default-topic: user-topic-avro-1
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer

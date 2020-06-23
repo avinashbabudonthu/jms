@@ -1,4 +1,5 @@
 # List of Projects
+* [Deserialization Error Handling Spring Boot](deserialization-error-handling-spring-boot)
 * [Kafka with Core Java](kafka-core-java)
 * [Kafka Core Java Avro](kafka-core-java-avro)
 * [Kafka Server Properties Files](kafka-server-properies-files)
