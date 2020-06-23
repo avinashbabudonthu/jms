@@ -4,11 +4,11 @@
 * We have source system and target system and they exchange data
 * So next step is there are number of source systems and number of target systems. When all of them want to exchange data with one another then things become very complicated
 * Lets say we 5 source systems and 6 target systems then we need to write (5*6) == 30 integrations
-* Each integration can have with it's difficulties like
+* Each integration can have it's difficulties like
 	* Protocol - how data has to be exchanged like TCP, Http, REST, FTP, JDBC etc
 	* Data Format like Binary, CSV, XML, JSON, AVRO etc
 	* Data schema and evaluation
-* There can increased load from the connections
+* There can be increased load from the connections
 * To solve above problem we need to use Apacha Kafka
 	* Allows decouple data streams and systems (source and target)
 	* Source systems send data to Apache Kafka
@@ -20,14 +20,13 @@
 
 ## Basics
 * Message retaining
-	* In traditional messaging system has transient message persistance. Means once message is consumed by consumer it will be deleted from the message broker
-	* In the case of Kafka event will be saved in the file system where kafka is installed. Events are retained for certain time
-* All the events in kafka are immutable. Means once message sent to kafka then it cannot be altered
+	* Traditional messaging system has transient message persistance. Means once message is consumed by consumer it will be deleted from the message broker
+	* In the case of Kafka - event will be saved in the file system where kafka is installed. Events are retained for certain time
+* All the events in kafka are immutable. Means once message sent to kafka, it cannot be altered
 * Any consumer who has access to broker can read the message
-* Kafka is distributed streaming system
-* Kafka is streaming system. Not a just messaging system
+* Kafka is distributed streaming system. Not a just messaging system
 * Created by LinkedIn and open sourced
-* Currently maintained by Confluent
+* Currently maintained by `Confluent`
 * Distributed
 * Resilient Architecture
 * Fault Tolerant
@@ -70,8 +69,8 @@
 	* Consume messages from kafka broker
 * Client APIs of kafka
 	* Kafka connect
-		* Source connector: Used to pull the data from external data source such as database, file system, elastic search into kafka topic
-		* Sink connector: Push data from kafka topic to external data sources such as ElasticSearch, database, file system etc
+		* Source connector: Used to pull the data from external data source such as database, file system, ElasticSearch into kafka topic
+		* Sink connector: Push data from kafka topic to external data sources such as database, file system, ElasticSearch etc
 	* Kafka streams API - Kafka to Kafka data transfer
 		* Take the data from kafka and perform simple to complex transformations and put it back to kafka
 * Finally kafka client APIs as described above
