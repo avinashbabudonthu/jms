@@ -58,26 +58,31 @@
 	* Single Message Transforms API
 	
 ## Kafka Terminology and Client APIs
-* Kafka Cluster: consists of multiple brokers
-* In order to manage multiple brokers we need Zookeeper
-	* Zookeeper keeps track of health of brokers and manage the cluster for you
-* `Broker` is what all kafka clients interact with
-* Kafka Producer
+* Broker: all kafka clients interact with
+* Cluster
+	* consists of multiple brokers
+	* In order to manage multiple brokers in cluster we need Zookeeper. Zookeeper keeps track of health of brokers and manage the cluster for you
+* Topic
+* Partition
+* Partitioner
+* Producer
 	* Client to kafka broker
 	* Produce new data to kafka
-* Kafka consumer
+* Consumer
 	* Consume messages from kafka broker
-* Client APIs of kafka
-	* Kafka connect
-		* Source connector: Used to pull the data from external data source such as database, file system, ElasticSearch into kafka topic
-		* Sink connector: Push data from kafka topic to external data sources such as database, file system, ElasticSearch etc
-	* Kafka streams API - Kafka to Kafka data transfer
-		* Take the data from kafka and perform simple to complex transformations and put it back to kafka
-* Finally kafka client APIs as described above
-	* Producer API
-	* Consumer API
-	* Connect API
-	* Streams API
+* Kafka Connect
+	* Source Connector: Used to pull the data from external data source such as database, file system, ElasticSearch into kafka topic
+	* Sink Connector: Push data from kafka topic to external data sources such as database, file system, ElasticSearch etc
+* Kafka Streams
+	* Kafka to Kafka data transfer
+	* Take the data from kafka and perform simple to complex transformations and put it back to kafka
+* Offset
+* `__consumer_offsets`
+* Commit Logs
+* Retention Policy
+* Broker Controller: Let's say we have kafka clusted with 3 brokers. out of 3 brokers 1 broker will behave as controller. Normally this will be first broker which joined the cluster
+* replication-factor: number of copies of same message
+* [ISR - In-sync replica](#in-sync-replica-isr)
 	
 ## Kafka Topics and Partitions
 ### Topic
@@ -120,7 +125,7 @@
 * Any message produced to topic will have unique id called `offset`
 * Consumers will have 3 options when reading messages from topic
 	* from-beginning: all messages from starting
-	* latest: read only messages that came after consumer started. Default value
+	* latest: read only messages that came after consumer started. `Default value`
 	* specific offset: read messages in the topic by passing `offset` values from consumer. This option can only be done programmatically
 * Consumer read each message and after reading message offset incremented by 1. Once all the poll records are read then consumer commits the offset to the topic `__consumer_offsets` with the group id. Now consumer is down and brought up after some time. By this time producer produced some more messages. Now consumer know where to start to consume message with the value present in `__consumer_offsets` topic with the group id
 
@@ -162,7 +167,7 @@
 * Client requests distributed among 3 brokers. If any of the broker goes down then zoo-keeper gets notified then all client requests will be routed to other available brokers
 
 ## Setting up kafka cluster in local with 3 brokers
-* In order to start multiple kafka brokers, we need to have different `server.properties` file with each broker. This new `server.properties` should have unique values compared to other `server.properties`
+* In order to start multiple kafka brokers, we need to have different `server.properties` file for each broker. This new `server.properties` should have unique values compared to other `server.properties`
 ```
 broker.id=1
 listeners=PLAINTEXT://localhost:9093
@@ -187,7 +192,7 @@ auto.create.topics.enable=false(optional)
 ## How kafka cluster distributes the client requests
 ### How Topics are distributed across available brokers
 * Let's say we have kafka clusted with 3 brokers
-	* out of 3 brokers 1 broker will behave as controller. Normally this will be first broker which joined the cluster
+	* out of 3 brokers 1 broker will behave as `controller`. Normally this will be first broker which joined the cluster
 * when create topic command is executed then zoo-keeper redirects request to controller
 	* Let's say want to create `test` topic with 3 partitions
 * Controller distributes the ownership of partitions to available brokers. This concept of distributing partitions to brokers is called `Leader Assignment`
@@ -215,7 +220,7 @@ auto.create.topics.enable=false(optional)
 	* partition-0 to broker-1
 	* partition-1 to broker-2
 	* partition-2 to broker-3
-* Now broker-1 goes down. This is leader or partition-0
+* Now broker-1 goes down. This is leader of partition-0
 	* All the data written to partition-0 present in broker-1 file system
 	* Now data in broker-1 is lost
 ### Kafka handling data loss
@@ -263,7 +268,7 @@ kafka-topics.bat --alter --zookeeper localhost:2181 --topic library-events --con
 ### Configuring kafka template
 * Mandatory values
 ```
-bootstrap-servers: localhost:9092, localhost:9093, localhost:9094
+bootstrap-servers: localhost:9092, localhost:9093, localhost:9094 ## broker urls
 key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
 value-serializer: org.apache.kafka.common.serialization.StringSerializer
 ```
@@ -271,12 +276,12 @@ value-serializer: org.apache.kafka.common.serialization.StringSerializer
 * KafkaTemplate Auto configuration with Spring Boot `application.yml`
 ```
 spring:
-	profiles: localhost
-	kafka:
-		producer:
-			bootstrap-servers: localhost:9092, localhost:9093, localhost:9094
-			key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
-			value-serializer: org.apache.kafka.common.serialization.StringSerializer
+ profiles: localhost
+  kafka:
+   producer:
+    bootstrap-servers: localhost:9092, localhost:9093, localhost:9094
+    key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
 ```
 * `org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration` reads kafka properties from `application.yml` and create `KafkaTemplate`
 
