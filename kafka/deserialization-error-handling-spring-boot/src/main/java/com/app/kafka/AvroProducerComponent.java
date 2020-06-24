@@ -19,8 +19,10 @@ public class AvroProducerComponent {
 
 	public void sendMessage(User user) {
 		String name = user.getName();
+		int age = user.getAge();
 		for (int i = 1; i <= 10; i++) {
 			user.setName(name + i);
+			user.setAge(age + i);
 			ProducerRecord<String, User> producerRecord = new ProducerRecord<>(topic, String.valueOf(i), user);
 			kafkaTemplate.send(producerRecord);
 		}

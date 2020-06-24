@@ -26,28 +26,6 @@ public class ConsumerComponent {
 		log.info("consumer-record={}", consumerRecord);
 	}
 
-	/*@Bean
-	public ConcurrentKafkaListenerContainerFactory<String, User> kafkaListenerContainerFactory(
-			ConsumerFactory<String, User> consumerFactory) {
-		ConcurrentKafkaListenerContainerFactory<String, User> factory = new ConcurrentKafkaListenerContainerFactory<>();
-		factory.setConsumerFactory(consumerFactory);
-		factory.getContainerProperties().setAckOnError(false);
-		factory.getContainerProperties().setAckMode(AckMode.RECORD);
-		Properties properties = new Properties();
-		properties.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, ErrorHandlingDeserializer2.class);
-		factory.getContainerProperties().setKafkaConsumerProperties(properties);
-		// factory.setErrorHandler(new SeekToCurrentErrorHandler());
-		return factory;
-	}*/
-
-	/*@Bean
-	public ConsumerFactory<String, User> kafkaConsumerFactory(KafkaProperties properties,
-			JsonDeserializer customDeserializer) {
-	
-		return new DefaultKafkaConsumerFactory<>(properties.buildConsumerProperties(), customDeserializer,
-				customDeserializer);
-	}*/
-
 	@Bean
 	public ConcurrentKafkaListenerContainerFactory<String, User> kafkaListenerContainerFactory(
 			ConsumerFactory<String, User> consumerFactory) {
@@ -59,20 +37,34 @@ public class ConsumerComponent {
 					MessageListenerContainer container) {
 				String s = thrownException.getMessage().split("Error deserializing key/value for partition ")[1]
 						.split(". If needed, please seek past the record to continue consumption.")[0];
-				System.out.println(s);
-				String topics = s.split(" ")[0];
-				topics = topics.substring(0, topics.lastIndexOf("-"));
-				int offset = Integer.valueOf(s.split("offset ")[1]);
+				log.info("error-message={}", s); // practice-topic-2-0 at offset 8
 
-				// practice-topic-2-0 at offset 8
-				// int partition = Integer.valueOf(s.split("-")[1].split(" at")[0]);
+				/*
+				 * extract topic from above String s : practice-topic-2-0 at offset 8
+				 * topic: practice-topic-2
+				 */
+				String topic = s.split(" ")[0];
+				topic = topic.substring(0, topic.lastIndexOf("-"));
+				log.info("topic={}", topic);
+
+				/*
+				 * extract offset from above String s : practice-topic-2-0 at offset 8
+				 * partition: 0
+				 */
 				int partition = Integer.parseInt(s.split(" ")[0].substring(s.split(" ")[0].lastIndexOf("-") + 1));
+				log.info("partition={}", partition);
 
-				// practice-topic-2-0-0
-				TopicPartition topicPartition = new TopicPartition(topics, partition);
-				//log.info("Skipping " + topic + "-" + partition + " offset " + offset);
+				/*
+				 * extract offset from above String s : practice-topic-2-0 at offset 8
+				 * offset: 8
+				 */
+				int offset = Integer.valueOf(s.split("offset ")[1]);
+				log.info("offset={}", offset);
+
+				TopicPartition topicPartition = new TopicPartition(topic, partition);
+				log.info("Skipping: {}-{} offset {}", topic, partition, offset);
 				consumer.seek(topicPartition, offset + 1);
-				System.out.println("OKKKKK");
+				log.info("Skipped: {}-{} offset {}", topic, partition, offset);
 			}
 
 			@Override
@@ -84,14 +76,30 @@ public class ConsumerComponent {
 			public void handle(Exception e, ConsumerRecord<?, ?> consumerRecord, Consumer<?, ?> consumer) {
 				String s = e.getMessage().split("Error deserializing key/value for partition ")[1]
 						.split(". If needed, please seek past the record to continue consumption.")[0];
-				String topics = s.split("-")[0];
-				int offset = Integer.valueOf(s.split("offset ")[1]);
-				int partition = Integer.valueOf(s.split("-")[1].split(" at")[0]);
 
-				TopicPartition topicPartition = new TopicPartition(topics, partition);
-				//log.info("Skipping " + topic + "-" + partition + " offset " + offset);
+				/*
+				 * extract topic from above String s : practice-topic-2-0 at offset 8
+				 * topic: practice-topic-2
+				 */
+				String topic = s.split(" ")[0];
+				topic = topic.substring(0, topic.lastIndexOf("-"));
+
+				/*
+				 * extract offset from above String s : practice-topic-2-0 at offset 8
+				 * offset: 8
+				 */
+				int offset = Integer.valueOf(s.split("offset ")[1]);
+
+				/*
+				 * extract offset from above String s : practice-topic-2-0 at offset 8
+				 * partition: 0
+				 */
+				int partition = Integer.parseInt(s.split(" ")[0].substring(s.split(" ")[0].lastIndexOf("-") + 1));
+
+				TopicPartition topicPartition = new TopicPartition(topic, partition);
+				log.info("Skipping: {}-{} offset {}", topic, partition, offset);
 				consumer.seek(topicPartition, offset + 1);
-				System.out.println("OKKKKK");
+				log.info("Skipped: {}-{} offset {}", topic, partition, offset);
 
 			}
 		});
