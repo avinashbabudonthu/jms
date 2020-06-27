@@ -242,7 +242,7 @@ auto.create.topics.enable=false(optional)
 	
 ## How kafka cluster distributes the client requests
 ### How Topics are distributed across available brokers
-* Let's say we have kafka clusted with 3 brokers
+* Let's say we have kafka cluster with 3 brokers
 	* out of 3 brokers 1 broker will behave as `controller`. Normally this will be first broker which joined the cluster
 * when create topic command is executed then zoo-keeper redirects request to controller
 	* Let's say want to create `test` topic with 3 partitions
@@ -417,3 +417,16 @@ public class AppConfig{
 * Each broker knows about all brokers, topics, partitions
 ![picture](images/broker-discovery.jpg)
 * Above will be done automatically we don't need to externally code for it
+
+## Zookeeper
+* Manages brokers (keeps list of them)
+* Helps in performing leader election for partitions
+* Sends notifications to kafka in case of changes like
+	* new topic
+	* broker dies
+	* broker came up
+	* delete topic
+* Kafka can't work with zookeeper
+* Zookeeper by design operated with an odd number of servers. Means if we want to have zookeeper cluster then we need to start 1, 3, 5, 7 instances
+* zookeeper has leader (handle writes) the rest of servers are followers (handle reads)
+![picture](images/zookeeper.jpg)
