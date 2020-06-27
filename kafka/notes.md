@@ -83,7 +83,7 @@
 * [Consumer Groups](#consumer-groups)
 * [Commit Logs](#commit-log)
 * [Retention Policy](#retention-policy): Determines how long the message is going to be retained
-* Broker Controller: Let's say we have kafka clusted with 3 brokers. out of 3 brokers 1 broker will behave as controller. Normally this will be first broker which joined the cluster
+* Broker Controller: Let's say we have kafka cluster with 3 brokers. out of 3 brokers 1 broker will behave as controller. Normally this will be first broker which joined the cluster
 * replication-factor: number of copies of same message
 * [ISR - In-sync replica](#in-sync-replica-isr): Represents the number of replicas in sync with each other in the cluster including leader and follower replica
 * [Leader Replica](#kafka-handling-data-loss)
@@ -117,6 +117,65 @@
 * All records are persisted in commit log in file system where kafka is installed
 * Producer can control to which partition the message can go
 
+## Producers
+* Client to kafka broker
+* Produce new data to kafka
+* Producers can choose to receive acknowledgement of data it writes to kafka
+	* acks=0; - Producer won't wait for acknowledgement. Possible data loss
+	* acks=1; Producer will wait for leader to acknowledge. Default value. Limited data loss
+	* acks=all; Leader and all replicas acknowledge. No data loss
+* Producers can send key with message. Key data type can be anything like String, Integer, Char etc
+* If key==null, data is sent in round robin
+* If key is sent, then all messages with same key go to same partition
+* A key is basically needed if we want to sort message by specific fields
+	* For example we can if we want to transactions of one account-number in one partition then we can use account-number as key
+* We cannot say which key goes to which partition. But all keys go to same partition
+
+## Consumer
+* Consumer read data from topic (identified by name)
+* Consumer should know broker details
+* Data is read sequentially within each partition
+* Consumers can read data from multiple partition
+* There is no guarantee in the order of reading multiple partitions
+* Multiple partition reads happens in parallel
+
+## Consumer Groups
+* Consumers read data in consumer groups
+* Each consumer within group reads from exclusive partitions
+![picture](images/consumer-groups.jpg)
+* If we have more consumers than partitions then some consumers will be inactive
+![picture](images/inactive-consumer-groups.jpg)
+* Group id plays major role when it comes to scalable message consumption
+* Different applications need to have unique group id
+* who manages consumer group?
+	* Kafka broker manages the consumer groups
+	* Kafka broker also acts as group co-ordinator
+	
+## Consumer Offset
+* Kafka stores the offsets at which consumer group has been reading
+* Any message produced to topic will have unique id called `offset`
+* Consumers will have 3 options when reading messages from topic
+	* from-beginning: all messages from starting
+	* latest: read only messages that came after consumer started. `Default value`
+	* specific offset: read messages in the topic by passing `offset` values from consumer. This option can only be done programmatically
+* Consumer read each message and after reading message offset incremented by 1. Once all the poll records are read then consumer commits the offset to the topic named `__consumer_offsets` with the group id. Now consumer is down and brought up after some time. By this time producer produced some more messages. Now consumer know where to start to consume message with the value present in `__consumer_offsets` topic with the group id
+
+## Delivery semantics for consumers
+* Consumers can choose when to commit offsets
+* There are 3 delivery semantics
+	* At most once
+		* offsets are committed as soon as message is received
+		* If processing went wrong then message will be lost (it won't be read again)
+		* Not preferred
+	* At least once
+		* Preferred
+		* Offsets are committed after the message is processed
+		* If process went wrong then message will be read again
+		* This technique is duplicates messages processing so make sure processing again the message won't impact the system
+	* Exactly once
+		* Can be achieved for Kafka-to-Kafka workflows using Kafka Streams API
+		* For Kafka to external system workflows (like databases), we have to use idempotent consumers to make sure there are no duplicate records
+
 ## Sending message without key
 * When we send message to topic, it will go through `Partitioner`
 * If key is not present with message `partitioner` will follow round robin technique
@@ -127,14 +186,6 @@
 * We can use any datatype for key. General practice is to use String
 * When message contains key then `partitioner` will apply hashing technique to determine partition
 * Multiple messages can be sent with same key. Then they all goes to same partition
-
-## Consumer Offset
-* Any message produced to topic will have unique id called `offset`
-* Consumers will have 3 options when reading messages from topic
-	* from-beginning: all messages from starting
-	* latest: read only messages that came after consumer started. `Default value`
-	* specific offset: read messages in the topic by passing `offset` values from consumer. This option can only be done programmatically
-* Consumer read each message and after reading message offset incremented by 1. Once all the poll records are read then consumer commits the offset to the topic `__consumer_offsets` with the group id. Now consumer is down and brought up after some time. By this time producer produced some more messages. Now consumer know where to start to consume message with the value present in `__consumer_offsets` topic with the group id
 
 ## Commit Log and Retention Policy
 ### Commit Log
@@ -360,36 +411,9 @@ public class AppConfig{
 * So each partition will have 1 leader and multiple ISR (In Sync Replica)
 ![picture](images/partition-leader-and-replication.jpg)
 
-## Producers
-* Client to kafka broker
-* Produce new data to kafka
-* Producers can choose to receive acknowledgement of data it writes to kafka
-	* acks=0; - Producer won't wait for acknowledgement. Possible data loss
-	* acks=1; Producer will wait for leader to acknowledge. Default value. Limited data loss
-	* acks=all; Leader and all replicas acknowledge. No data loss
-* Producers can send key with message. Key data type can be anything like String, Integer, Char etc
-* If key==null, data is sent in round robin
-* If key is sent, then all messages with same key go to same partition
-* A key is basically needed if we want to sort message by specific fields
-	* For example we can if we want to transactions of one account-number in one partition then we can use account-number as key
-* We cannot say which key goes to which partition. But all keys go to same partition
-
-## Consumer
-* Consumer read data from topic (identified by name)
-* Consumer should know broker details
-* Data is read sequentially within each partition
-* Consumers can read data from multiple partition
-* There is no guarantee in the order of reading multiple partitions
-* Multiple partition reads happens in parallel
-
-## Consumer Groups
-* Consumers read data in consumer groups
-* Each consumer within group reads from exclusive partitions
-![picture](images/consumer-groups.jpg)
-* If we have more consumers than partitions then some consumers will be inactive
-![picture](images/inactive-consumer-groups.jpg)
-* Group id plays major role when it comes to scalable message consumption
-* Different applications need to have unique group id
-* who manages consumer group?
-	* Kafka broker manages the consumer groups
-	* Kafka broker also acts as group co-ordinator
+## Kafka broker discovery
+* Every kafka broker is called `bootstrap server`
+* We only need to connect to one broker and we will be connected to entire cluster
+* Each broker knows about all brokers, topics, partitions
+![picture](images/broker-discovery.jpg)
+* Above will be done automatically we don't need to externally code for it
