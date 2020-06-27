@@ -67,10 +67,10 @@
 * Partitioner
 	* [Send message without key](#sending-message-without-key)
 	* [Send message with key](#sending-message-with-key)
-* Producer
+* [Producers](#producers)
 	* Client to kafka broker
 	* Produce new data to kafka
-* Consumer
+* [Consumer](#consumer)
 	* Consume messages from kafka broker
 * Kafka Connect
 	* Source Connector: Used to pull the data from external data source such as database, file system, ElasticSearch into kafka topic
@@ -85,7 +85,7 @@
 * [Retention Policy](#retention-policy): Determines how long the message is going to be retained
 * Broker Controller: Let's say we have kafka clusted with 3 brokers. out of 3 brokers 1 broker will behave as controller. Normally this will be first broker which joined the cluster
 * replication-factor: number of copies of same message
-* [ISR - In-sync replica](#in-sync-replica-isr): Represents the number of replicas in sync with each other in the cluster including leder and follower replica
+* [ISR - In-sync replica](#in-sync-replica-isr): Represents the number of replicas in sync with each other in the cluster including leader and follower replica
 * [Leader Replica](#kafka-handling-data-loss)
 * [Follower Replica](#kafka-handling-data-loss)
 * Record Accumulator
@@ -135,13 +135,6 @@
 	* latest: read only messages that came after consumer started. `Default value`
 	* specific offset: read messages in the topic by passing `offset` values from consumer. This option can only be done programmatically
 * Consumer read each message and after reading message offset incremented by 1. Once all the poll records are read then consumer commits the offset to the topic `__consumer_offsets` with the group id. Now consumer is down and brought up after some time. By this time producer produced some more messages. Now consumer know where to start to consume message with the value present in `__consumer_offsets` topic with the group id
-
-## Consumer Groups
-* Group id plays major role when it comes to scalable message consumption
-* Different applications need to have unique group id
-* who manages consumer group?
-	* Kafka broker manages the consumer groups
-	* Kafka broker also acts as group co-ordinator
 
 ## Commit Log and Retention Policy
 ### Commit Log
@@ -244,9 +237,10 @@ kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 3 --pa
 * Here for this data
 	* broker-1 is `Leader Replica`
 	* broker-2, broker-3 are `Follower Replica`
+![picture](images/replication-factor.png)
 	
 ## In-sync replica (ISR)
-* Represents the number of replicas in sync with each other in the cluster including leder and follower replica
+* Represents the number of replicas in sync with each other in the cluster including leader and follower replica
 * Recommended value for in-sync-replica is greater than 1
 * Ideal value is ISR == Replication Factor
 * This can be configured with property `min.insync.replicas`
@@ -343,12 +337,12 @@ public class AppConfig{
 * We need to be able to evovle data without breaking downstream consumers. For this we need `schema` and `schema registry`
 
 ### What if kafka brokers verify messages they receive?
-* This will break what makes so good
+* This will break what makes kafka so good
 	* Kafka does not parse or even read data (no CPU usage)
 	* Kafka takes the bytes as input without even loading them into memory (that is called zero copy)
 	* Kafka distributes bytes
 	* As for kafak, it does not know if data is Integer or String etc
-* If we change able behavior then we see performance hit
+* If we change this behavior then we see performance hit
 
 ### Solve above issue with Schema Registry
 * Schema registry has to be separate component
@@ -358,3 +352,44 @@ public class AppConfig{
 	* Support Schemas
 	* Support Evolution
 	* Lightweight
+
+## Concept of Leader for Partition
+* At any time only ONE broker can be leader for given partition
+* Only that leader can receive or send data for partition
+* The other brokers will synchronize the data
+* So each partition will have 1 leader and multiple ISR (In Sync Replica)
+![picture](images/partition-leader-and-replication.jpg)
+
+## Producers
+* Client to kafka broker
+* Produce new data to kafka
+* Producers can choose to receive acknowledgement of data it writes to kafka
+	* acks=0; - Producer won't wait for acknowledgement. Possible data loss
+	* acks=1; Producer will wait for leader to acknowledge. Default value. Limited data loss
+	* acks=all; Leader and all replicas acknowledge. No data loss
+* Producers can send key with message. Key data type can be anything like String, Integer, Char etc
+* If key==null, data is sent in round robin
+* If key is sent, then all messages with same key go to same partition
+* A key is basically needed if we want to sort message by specific fields
+	* For example we can if we want to transactions of one account-number in one partition then we can use account-number as key
+* We cannot say which key goes to which partition. But all keys go to same partition
+
+## Consumer
+* Consumer read data from topic (identified by name)
+* Consumer should know broker details
+* Data is read sequentially within each partition
+* Consumers can read data from multiple partition
+* There is no guarantee in the order of reading multiple partitions
+* Multiple partition reads happens in parallel
+
+## Consumer Groups
+* Consumers read data in consumer groups
+* Each consumer within group reads from exclusive partitions
+![picture](images/consumer-groups.jpg)
+* If we have more consumers than partitions then some consumers will be inactive
+![picture](images/inactive-consumer-groups.jpg)
+* Group id plays major role when it comes to scalable message consumption
+* Different applications need to have unique group id
+* who manages consumer group?
+	* Kafka broker manages the consumer groups
+	* Kafka broker also acts as group co-ordinator
