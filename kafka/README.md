@@ -18,6 +18,8 @@
 * Apache Kafka Series - Learn Apache Kafka for Beginners V2
 * Apache Kafka Series - Kafka Connect Hands-on Learning
 * Apache Kafka for Developers using Spring Boot
+* Apache Kafka for Developers using Spring Boot[LatestEdition]
+* Kafka & Kafka Streams With Java Spring Boot - Hands-on Coding
 
 ### Youtube
 * [kafka scehma registry](https://www.youtube.com/watch?v=5fjw62LGYNg)
