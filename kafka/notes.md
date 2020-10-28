@@ -99,7 +99,7 @@
 * Topics are split into `Partitions`
 	* Each partition has number starts with zero(0) like partition-0, partition-1
 	* Each partition is ordered
-	* Each message within partition get an incermental id called `offset`
+	* Each message within partition get an incermental id called `offset`\
 ![picture](images/topic-partition-offset.jpg)
 * Topic live inside kafka broker
 * Kafka clients uses topic name to produce and consume messages
@@ -141,9 +141,9 @@
 
 ## Consumer Groups
 * Consumers read data in consumer groups
-* Each consumer within group reads from exclusive partitions
+* Each consumer within group reads from exclusive partitions\
 ![picture](images/consumer-groups.jpg)
-* If we have more consumers than partitions then some consumers will be inactive
+* If we have more consumers than partitions then some consumers will be inactive\
 ![picture](images/inactive-consumer-groups.jpg)
 * Group id plays major role when it comes to scalable message consumption
 * Different applications need to have unique group id
@@ -287,7 +287,7 @@ kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 3 --pa
 	* broker-3
 * Here for this data
 	* broker-1 is `Leader Replica`
-	* broker-2, broker-3 are `Follower Replica`
+	* broker-2, broker-3 are `Follower Replica`\
 ![picture](images/replication-factor.png)
 	
 ## In-sync replica (ISR)
@@ -408,13 +408,13 @@ public class AppConfig{
 * At any time only ONE broker can be leader for given partition
 * Only that leader can receive or send data for partition
 * The other brokers will synchronize the data
-* So each partition will have 1 leader and multiple ISR (In Sync Replica)
+* So each partition will have 1 leader and multiple ISR (In Sync Replica)\
 ![picture](images/partition-leader-and-replication.jpg)
 
 ## Kafka broker discovery
 * Every kafka broker is called `bootstrap server`
 * We only need to connect to one broker and we will be connected to entire cluster
-* Each broker knows about all brokers, topics, partitions
+* Each broker knows about all brokers, topics, partitions\
 ![picture](images/broker-discovery.jpg)
 * Above will be done automatically we don't need to externally code for it
 
@@ -428,5 +428,5 @@ public class AppConfig{
 	* delete topic
 * Kafka can't work with zookeeper
 * Zookeeper by design operated with an odd number of servers. Means if we want to have zookeeper cluster then we need to start 1, 3, 5, 7 instances
-* zookeeper has leader (handle writes) the rest of servers are followers (handle reads)
+* zookeeper has leader (handle writes) the rest of servers are followers (handle reads)\
 ![picture](images/zookeeper.jpg)
