@@ -8,7 +8,7 @@
 * [Spring Boot 2 Kafka Producer](spring-boot2-kafka-producer)
 * [Kafka Confluent Platform Setup](kafka-confluent-platform-setup)
 * [Kafka Connect Notes](kafka-connect-notes.md)
-* {Kafka Notes](notes.md)
+* [Kafka Notes](notes.md)
 
 ## Materials
 ### Pluralsight
