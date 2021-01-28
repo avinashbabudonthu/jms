@@ -22,4 +22,4 @@
 * Kafka & Kafka Streams With Java Spring Boot - Hands-on Coding
 
 ### Youtube
-* [kafka scehma registry](https://www.youtube.com/watch?v=5fjw62LGYNg)
+* [kafka schema registry](https://www.youtube.com/watch?v=5fjw62LGYNg)
