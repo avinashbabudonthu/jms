@@ -129,7 +129,7 @@
 * If key is sent, then all messages with same key go to same partition
 * A key is basically needed if we want to sort message by specific fields
 	* For example we can if we want to transactions of one account-number in one partition then we can use account-number as key
-* We cannot say which key goes to which partition. But all keys go to same partition
+* We cannot say which key goes to which partition. But all same keys go to same partition
 
 ## Consumer
 * Consumer read data from topic (identified by name)

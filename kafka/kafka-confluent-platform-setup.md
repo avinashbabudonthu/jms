@@ -21,7 +21,7 @@ docker-compose ps
 ```
 PS C:\softwares\kafka-confluent\cp-all-in-one\cp-all-in-one> docker-compose ps
 ```
-* Open url - http://localhost:9021
+* Open url - [http://localhost:9021](http://localhost:9021)
 	* Check the `control-center` port using `docker-compose ps` command result
 ![picture](images/kafka-confluent-control-center.jpg)
 
