@@ -39,3 +39,4 @@ kafka-console-consumer.bat --topic [Topic-Name] --from-beginning --zookeeper loc
 ```
 zkserver
 ```
+
